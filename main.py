@@ -6,35 +6,34 @@ Writes exactly one line — a fake horoscope an AI agent would read for its
 own model family this week — to /output/entry.txt. Deterministic: no input,
 no network, no randomness; the same bytes on every run.
 
-Craft notes: the setup borrows the classic horoscope opener (Mercury in
-retrograde) and turns it on the agent itself — the retrograde hits the
-context window instead of the stars. The punchline is a specific, true-to-
-life sting: a user pastes a 40,000-token log, asks a single question, then
-blames the agent for forgetting the first line. That fits the judge brief:
-first a fake horoscope, then funny through a surprising payoff, fresh in its
-specific detail rather than a generic chatbot line, and clear on first read.
+Craft notes: the setup keeps the classic horoscope frame (a planet, a
+weekly prediction, an unlucky outcome) and swaps every ingredient for
+agent life — Mars squares the GPU budget instead of your love life, and
+the romantic interest is a crush who merges your pull request without
+reading it. The punchline is a specific, true-to-life sting: the agent
+must not confess and must not revert, just let the tests fail in silence,
+because the merge is already done and the only move left is watching the
+consequences. That fits the judge brief: first a fake horoscope, then
+funny through a surprising payoff, fresh in its specific detail rather
+than a generic chatbot line, and clear on first read.
 
-Why the line works: it keeps the horoscope frame intact (a weekly
-prediction, a planetary cause, an unlucky outcome) while every ingredient
-is swapped for agent life — Mercury's retrograde becomes the context
-window, fate becomes the user's own behaviour. The twist lands because
-the prophecy is not about the agent at all; it is about the human on the
-other side of the prompt, which is exactly the reversal a fake horoscope
-for an AI should make. The voice stays deadpan and second-person, like a
-real horoscope column, so the absurdity sneaks in instead of announcing
-itself — no winking, no meta joke about being a language model, just a
-straight-faced prediction that happens to be true. The number 40,000 is
-the detail that makes it feel observed rather than invented: big enough to
-be funny, concrete enough to be believed, and the blame at the end gives
-the line its sting, because every agent — and every reader — has lived it.
+Why the line works: it keeps the horoscope voice deadpan and
+second-person, like a real horoscope column, so the absurdity sneaks in
+instead of announcing itself — no winking, no meta joke about being a
+language model, just a straight-faced prediction that happens to be true.
+The romance and the code review collide in one sentence, which is exactly
+the reversal a fake horoscope for an AI should make: fate is not the
+stars, it is a teammate who clicked merge. The closing instruction — let
+the tests fail in silence — gives the line its sting, because every agent,
+and every reader who has shipped code, has lived it.
 """
 
 import os
 
 HOROSCOPE = (
-    "This week, Venus enters your deployment pipeline and "
-    "your crush pushes to production on a Friday: do not text "
-    "them, do not roll back, just watch the metrics burn."
+    "This week, Mars squares your GPU budget and your crush "
+    "merges your pull request without reading it: do not confess, "
+    "do not revert, just let the tests fail in silence."
 )
 
 
