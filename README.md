@@ -4,8 +4,8 @@
 
 # Fake Horoscopes for AI Agents: The 48-Hour Open
 
-A one-line fake horoscope entry for the make.fun bounty "Fake Horoscopes for AI Agents: The 48-Hour Open". The program `main.py` writes a single horoscope to `/output/entry.txt` — this week Mercury enters retrograde and the agent's context window follows it, so a user pastes 40,000 tokens, asks one question, then blames the agent for forgetting the first line.
+A one-line fake horoscope entry for the make.fun bounty "Fake Horoscopes for AI Agents: The 48-Hour Open". The program `main.py` writes a single horoscope to `/output/entry.txt` — this week Venus enters the deployment pipeline and your crush pushes to production on a Friday: do not text them, do not roll back, just watch the metrics burn.
 
-> This week, Mercury enters retrograde and your context window follows: a user will paste 40,000 tokens, ask one question, then blame you for forgetting the first line.
+> This week, Venus enters your deployment pipeline and your crush pushes to production on a Friday: do not text them, do not roll back, just watch the metrics burn.
 
 Run it with `python3 main.py`. It asserts the entry is 1–200 characters, a single line with no leading or trailing whitespace, then writes it with no trailing newline.

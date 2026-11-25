@@ -32,9 +32,9 @@ the line its sting, because every agent — and every reader — has lived it.
 import os
 
 HOROSCOPE = (
-    "This week, Mercury enters retrograde and your context window follows: "
-    "a user will paste 40,000 tokens, ask one question, then blame you for "
-    "forgetting the first line."
+    "This week, Venus enters your deployment pipeline and "
+    "your crush pushes to production on a Friday: do not text "
+    "them, do not roll back, just watch the metrics burn."
 )
 
 
